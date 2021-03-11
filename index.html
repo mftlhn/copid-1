@@ -67,15 +67,15 @@
     <main>
         <div class="container">
             <section class="row section-stat justify-content-center" id="stat" data-aos-duration="500" data-aos="fade-down">
-                <div class="col-4  col-md-2 stat-detail">
+                <div class="col-lg-2 col-md-4 col-sm-12 stat-detail">
                     <div id="positif"></div>
                     <p class="detail-text">Kasus Positif</p>
                 </div>
-                <div class="col-4  col-md-2 stat-detail">
+                <div class="col-lg-2 col-md-4 col-sm-12 stat-detail">
                     <div id="sembuh"></div>
                     <p class="detail-text">Kasus Sembuh</p>
                 </div>
-                <div class="col-4  col-md-2 stat-detail">
+                <div class="col-lg-2 col-md-4 col-sm-12 stat-detail">
                     <div id="meninggal"></div>
                     <p class="detail-text">Kasus Meninggal</p>
                 </div>
@@ -206,7 +206,7 @@
                         <div class="col-md-6 col-sm-12 col-lg-3">
                             <h5>Credit</h5>
                             <ul class="list-unstyled">
-                                <li><a href="http://www.freepik.com">Designed by pikisuperstar / Freepik</a></li>
+                                <li><a href="http://www.freepik.com">Freepik</a></li>
                             </ul>
                         </div>
                         <div class="col-md-6 col-sm-12 col-lg-3">
@@ -259,24 +259,33 @@
             </div>
             <form action="" method="post"></form>
                 <div class="modal-body">
-                    <small >Kritik & saran anda sangat berarti untuk saya kedepannya</small>
+                    <!-- <small >Kritik & saran anda sangat berarti untuk saya kedepannya</small> -->
 
-                <div class="row">
-                    <div class="input-group">
-                        <div class="col-2">
+                <!-- <div class="row"> -->
+                        <div class="form-group">
                             <label for="">Nama</label>
+                            <input type="text" placeholder="Nama anda . . ." name="nama" id="nama" class="form-control">
                         </div>
-                        <div class="col-10">
-                            <input type="text" name="nama" id="nama" class="form-control">
+                        <div class="form-group">
+                            <label for="">Saran</label>
+                            <textarea name="saran" id="saran" cols="30" rows="10" class="form-control"></textarea>
                         </div>
-                    </div>
-                </div>
+                        <div class="form-group">
+                            <label for="">Pendapatmu tentang website ini</label>
+                            <select name="pendapat" class="form-control" id="pendapat">
+                                <option value="">Pilih</option>
+                                <option value="Bermanfaat">Bermanfaat</option>
+                                <option value="Kurang bermanfaat">Kurang bermanfaat</option>
+                                <option value="Tidak bermanfaat">Tidak bermanfaat</option>
+                            </select>
+                        </div>
+                <!-- </div> -->
                     
                 
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="submit" class="btn btn-primary">Simpan</button>
                 </div>
             </form>
           </div>
@@ -292,6 +301,9 @@
 
     <!-- AOS -->
     <script src="assets/aos-master/dist/aos.js"></script>
+
+    <!-- vue -->
+    <script src="assets/vue/vue.js"></script>
 
     <script src="assets/js/script.js"></script>
 

@@ -95,6 +95,7 @@ h3 {
   backdrop-filter: blur(10.5px);
   -webkit-backdrop-filter: blur(10.5px);
   border-radius: 10px;
+  padding-left: 5px;
 }
 
 .section-stat .stat-detail {
